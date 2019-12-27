@@ -1,42 +1,17 @@
 <section class="features-icons bg-light text-center">
     <div class="container">
       <div class="row">
+        {% for minicontent in include.data %}
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-screen-desktop m-auto text-primary"></i>
+              <i class="{{ minicontent.icon }}"></i>
             </div>
-            <h3>Custom Web Design & Development</h3>
-            <p class="lead mb-0">Pembuatan dan pembangunan aplikasi berbasis Web yang artistik dan cantik untuk berbagai jenis client.</p>
+            <h3>{{ minicontent.title }}</h3>
+            <p class="lead mb-0">{{ minicontent.isi }}</p>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-layers m-auto text-primary"></i>
-            </div>
-            <h3>Custom System Development</h3>
-            <p class="lead mb-0">Sistem terkustomisasi yang dibangun secara khusus dan terukur untuk menyelesaikan permasalahan tertentu.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
-            </div>
-            <h3>Mobile App Development</h3>
-            <p class="lead mb-0">Menyelesaikan kebutuhan client dengan pembangunan aplikasi berbasis android maupun iPhone.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
-            </div>
-            <h3>Digital Marketing</h3>
-            <p class="lead mb-0">Melakukan aktifitas digital marketing atau pun konsultan sebagai wujud totalitas aksamedia dalam penyelesaian masalah client.</p>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
