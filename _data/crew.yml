@@ -1,0 +1,9 @@
+- name: Alpha
+  title: Programmer
+  image: img/crew-1.jpg
+- name: Beta
+  title: Desainer
+  image: img/crew-2.jpg
+- name: Alpha
+  title: Manager
+  image: img/crew-3.jpg

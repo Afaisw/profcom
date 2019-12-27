@@ -4,3 +4,17 @@
 
 layout: home
 ---
+
+<!-- Masthead -->
+{% include header.html %}
+<!-- Icons Grid -->
+{% include iconsection.html %}
+
+<!-- Image Showcases -->
+{% include imagesection.html %}
+
+<!-- Testimonials -->
+{% include testisection.html title="Crew" data=site.data.crew %}
+
+<!-- Call to Action -->
+{% include signup.html %}
