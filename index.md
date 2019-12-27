@@ -11,7 +11,7 @@ layout: home
 {% include iconsection.html title="minContent" data=site.data.minicontent %}
 
 <!-- Image Showcases -->
-{% include imagesection.html %}
+{% include imagesection.html title="bigContent" data=site.data.bigcontent %}
 
 <!-- Testimonials -->
 {% include testisection.html title="Crew" data=site.data.crew %}
