@@ -11,7 +11,7 @@ layout: home
 {% include iconsection.html title="minContent" data=site.data.minicontent %}
 
 <!-- Image Showcases -->
-{% include imagesection.html %}
+{% include imagesection.html title="minContent" data=site.data.bigcontent %}
 
 <!-- Call to Action -->
 {% include signup.html %}

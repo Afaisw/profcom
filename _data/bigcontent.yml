@@ -1,12 +1,12 @@
-title: Custom Web Design & Development
-isi : Pembuatan dan pembangunan aplikasi berbasis Web yang artistik dan cantik untuk berbagai jenis client.
-image: img/bigcontent-1.jpg
-title: Custom System Development
-isi : Sistem terkustomisasi yang dibangun secara khusus dan terukur untuk menyelesaikan permasalahan tertentu.
-image: img/bigcontent-2.jpg
-title: Mobile App Development
-isi : Menyelesaikan kebutuhan client dengan pembangunan aplikasi berbasis android maupun iPhone.
-image: img/bigcontent-3.jpg
-title: Digital Marketing
-isi : Melakukan aktifitas digital marketing atau pun konsultan sebagai wujud totalitas aksamedia dalam penyelesaian masalah client.
-image: img/bigcontent-2.jpg
+- title: Custom Web Design & Development
+  isi : Pembuatan dan pembangunan aplikasi berbasis Web yang artistik dan cantik untuk berbagai jenis client.
+  image: "img/bigcontent-1.jpg"
+- title: Custom System Development
+  isi : Sistem terkustomisasi yang dibangun secara khusus dan terukur untuk menyelesaikan permasalahan tertentu.
+  image: img/bigcontent-2.jpg
+- title: Mobile App Development
+  isi : Menyelesaikan kebutuhan client dengan pembangunan aplikasi berbasis android maupun iPhone.
+  image: img/bigcontent-3.jpg
+- title: Digital Marketing
+  isi : Melakukan aktifitas digital marketing atau pun konsultan sebagai wujud totalitas aksamedia dalam penyelesaian masalah client.
+  image: img/bigcontent-2.jpg
