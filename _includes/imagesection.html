@@ -3,10 +3,13 @@
     <div class="container-fluid p-0">
       {% for bigcontent in include.data %}
       <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{{ bigcontent.image }}');"></div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{{ bigcontent.image | relative_url }}');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>{{ bigcontent.title }}</h2>
           <p class="lead mb-0">{{ bigcontent.isi }}</p>
+          {% if bigcontent.link %}
+          <a href="{{ bigcontent.link | relative_url }}" class="btn btn-primary mt-2">Selengkapnya</a>
+          {% endif %}
         </div>
       </div>
       {% endfor %}
