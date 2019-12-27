@@ -13,8 +13,5 @@ layout: home
 <!-- Image Showcases -->
 {% include imagesection.html %}
 
-<!-- Testimonials -->
-{% include testisection.html title="Crew" data=site.data.crew %}
-
 <!-- Call to Action -->
 {% include signup.html %}
