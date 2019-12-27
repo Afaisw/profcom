@@ -1,34 +1,14 @@
 
   <section class="showcase">
     <div class="container-fluid p-0">
+      {% for bigcontent in include.data %}
       <div class="row no-gutters">
-
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{{ bigcontent.image }}');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Custom Web Design & Development</h2>
-          <p class="lead mb-0">Pembuatan dan pembangunan aplikasi berbasis Web yang artistik dan cantik untuk berbagai jenis client.</p>
+          <h2>{{ bigcontent.title }}</h2>
+          <p class="lead mb-0">{{ bigcontent.isi }}</p>
         </div>
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h2>Custom System Development</h2>
-          <p class="lead mb-0">Sistem terkustomisasi yang dibangun secara khusus dan terukur untuk menyelesaikan permasalahan tertentu.</p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Mobile App Development</h2>
-          <p class="lead mb-0">Menyelesaikan kebutuhan client dengan pembangunan aplikasi berbasis android maupun iPhone.</p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h2>Digital Marketing</h2>
-          <p class="lead mb-0">Melakukan aktifitas digital marketing atau pun konsultan sebagai wujud totalitas aksamedia dalam penyelesaian masalah client.</p>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </section>

@@ -8,7 +8,7 @@ layout: home
 <!-- Masthead -->
 {% include header.html %}
 <!-- Icons Grid -->
-{% include iconsection.html %}
+{% include iconsection.html title="minContent" data=site.data.minicontent %}
 
 <!-- Image Showcases -->
 {% include imagesection.html %}
