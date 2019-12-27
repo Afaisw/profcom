@@ -1,7 +1,13 @@
 <!-- Navigation -->
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Karapan Karya</a>
-      <a class="btn btn-primary" href="#">Sign In</a>
+      <a class="navbar-brand" href="{{ '/' | relative_url }}">
+        <img src="{{ 'assets/logo.svg' | relative_url }}" width="30" height="30" class="d-inline-block align-top" alt="">
+        Karapan Karya</a>
+      <a class="btn btn-link ml-auto" href="{{ '/' | relative_url }}">Home</a>
+      <a class="btn btn-link" href="{{ 'about' | relative_url }}">About</a>
+      <a class="btn btn-link" href="{{ 'services' | relative_url }}">Services</a>
+      <a class="btn btn-link" href="{{ 'case-studies' | relative_url }}">Case Studies</a>
+      <a class="btn btn-link" href="{{ 'contact' | relative_url }}">Contact</a>
     </div>
   </nav>
