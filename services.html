@@ -8,14 +8,14 @@ excerpt: >-
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ---
 
-
+{% include data=site.data.minicontent %}
 <section class="showcase">
   <div class="container-fluid p-0">
     <div class="row no-gutters">
-      <div class="col-lg-6 order-lg-2">
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
         <h2>Services</h2>
       </div>
-      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+      <div class="col-lg-6 order-lg-2">
         {% for minicontent in include.data %}
         <div class="row no-gutters">
           <div class="col-lg-4">
@@ -27,8 +27,8 @@ excerpt: >-
               <p class="lead mb-0">{{ minicontent.isi }}</p>
             </div>
           </div>
-          {% endfor %}
         </div>
+        {% endfor %}
       </div>
     </div>
   </div>
