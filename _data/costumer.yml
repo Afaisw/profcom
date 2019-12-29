@@ -1,6 +1,6 @@
 - name: Google
-  image: img/crew-1.jpg
+  image: img/go.png
 - name: Facebook
-  image: img/crew-2.jpg
+  image: img/fb.png
 - name: Twitter
-  image: img/crew-3.jpg
+  image: img/tw.png
