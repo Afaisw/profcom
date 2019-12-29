@@ -1,0 +1,6 @@
+- name: Google
+  image: img/crew-1.jpg
+- name: Facebook
+  image: img/crew-2.jpg
+- name: Twitter
+  image: img/crew-3.jpg

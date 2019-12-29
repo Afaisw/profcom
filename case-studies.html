@@ -6,6 +6,22 @@ excerpt: >-
   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
   dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+showcase:
+- title: Wordpress
+  image: img/case-1.jpg
+- title: Github
+  image: img/case-2.jpg
+- title: Linux
+  image: img/case-3.jpg
 ---
 
-Lorem Ipsum
+<section class="showcase">
+	<div class="slicking" data-slick='{"slidesToShow": 3}'>
+		{% for item in page.showcase %}
+		<div>
+			<img src="{{item.image | relative_url }}">
+			<div class="h3">{{ item.title }}</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
