@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="post my-5">
+
+  <header class="post-header text-center">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+      <p class="text-center container my-5">{{ page.excerpt }}</p>
+
+    {{ content }}
+  </div>
+
+</article>

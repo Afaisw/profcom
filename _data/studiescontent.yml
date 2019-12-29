@@ -1,8 +1,12 @@
 - title : loremipsum
   img : img/case-1.jpg
+  link: case-01.html
 - title : loremipsum
   img : img/case-2.jpg
+  link: case-02.html
 - title : loremipsum
   img : img/case-3.jpg
+  link: case-03.html
 - title : loremipsum
   img : img/case-4.jpg
+  link: case-04.html
