@@ -14,12 +14,13 @@
   .row:nth-child(odd) {
     flex-direction: row-reverse;
   }
-  .slicking {
-    img {
-      width: 100%;
-      height: 20vw;
-      object-fit: contain;
-      margin-bottom: 1em;
-    }
+}
+
+.case-study {
+  img {
+    width: 100%;
+    height: 20vw;
+    object-fit: contain;
+    margin-bottom: 1em;
   }
 }

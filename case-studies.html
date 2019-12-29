@@ -15,15 +15,4 @@ showcase:
   image: img/case-3.jpg
 ---
 
-<section class="showcase">
-	<div class="slicking" data-slick='{"slidesToShow": 3}'>
-		{% for item in page.showcase %}
-		<div>
-			<img src="{{item.image | relative_url }}">
-			<div class="h3">{{ item.title }}</div>
-		</div>
-		{% endfor %}
-	</div>
-</section>
-
 {% include casestudies.html title="Studi Kasus" data=site.data.studiescontent %}
