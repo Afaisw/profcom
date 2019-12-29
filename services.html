@@ -8,5 +8,28 @@ excerpt: >-
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ---
 
-<!-- Icons Grid -->
-{% include iconsection.html title="Services" data=site.data.minicontent link="services" %}
+
+<section class="showcase">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2">
+        <h2>Services</h2>
+      </div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        {% for minicontent in include.data %}
+        <div class="row no-gutters">
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="{{ minicontent.icon }}"></i>
+              </div>
+              <h3>{{ minicontent.title }}</h3>
+              <p class="lead mb-0">{{ minicontent.isi }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
