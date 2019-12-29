@@ -7,10 +7,12 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
-  <div class="post-content container">
-      <p class="text-center  my-5">{{ page.excerpt }}</p>
-
-    {{ content }}
-  </div>
-
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <img class="img-fluid mb-3" src="{{ page.image | relative_url }}">
+      <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+        {{ content }}
+      </div>
+    </div>
+  </section>
 </article>
