@@ -7,17 +7,15 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
-  <div class="post-content">
-      <p class="text-center container my-5">{{ page.excerpt }}</p>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            Lorem
-            <img class="img-fluid mb-3" src="../img/case-1.jpg">
-          </div>
-        </div>
-      </div>
-    {{ content }}
-  </div>
+  <div class="container-fluid p-0">
+		<div class="row no-gutters">
+		<div class="col-lg-6 order-lg-1">
+      <img class="img-fluid mb-3" src="../{{ page.image }}">
+		</div>
+		<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+			{{ content }}
+		</div>
+		</div>
+	</div>
 
 </article>
