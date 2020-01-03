@@ -2,10 +2,11 @@
 layout: default
 ---
 <article class="post my-5">
-
+  {% if page.excerpt %}
   <header class="post-header text-center">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
+  {% endif %}
 
   <div class="post-content">
       <p class="text-center container my-5">{{ page.excerpt }}</p>
