@@ -12,6 +12,9 @@ h6 {
   font-weight: 700;
 }
 
-.nav-item.active {
-  font-weight: bold;
+.navbar{
+  font-family: 'Montserrat Alternates', sans-serif;
+  .nav-item.active {
+    font-weight: bold;
+  }
 }
