@@ -19,7 +19,9 @@ summary:
 {% include imagesection.html title="minContent" data=page.summary %}
 
 <!-- Icons Grid -->
-{% include iconsection.html title="Services" data=site.data.minicontent link="services" %}
+<div class="bg-light">
+    {% include iconsection.html title="Services" data=site.data.minicontent link="services" %}
+</div>
 
 <!-- Image Showcases -->
 {% include imagesection.html title="minContent" data=site.data.bigcontent %}
