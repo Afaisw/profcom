@@ -24,3 +24,27 @@ h6 {
 .contentservices p{
   font-size: small;
 }
+.curvy-separator {
+  position: relative;
+  height: 0;
+
+  svg {
+    position: absolute;
+    top: -30px;
+    height: 60px;
+    width: 100%;
+    display: block;
+  }
+  .up {
+    fill: var(--up, transparent);
+  }
+  .down {
+    fill: var(--down, transparent);
+  }
+  .upback {
+    fill: var(--upback, transparent);
+  }
+  .downback {
+    fill: var(--downback, transparent);
+  }
+}

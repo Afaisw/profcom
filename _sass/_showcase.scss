@@ -11,7 +11,7 @@
       padding: 7rem;
     }
   }
-  .row:nth-child(odd) {
+  .row:not(.reverse):nth-child(odd), .row.reverse:nth-child(even) {
     flex-direction: row-reverse;
   }
 }

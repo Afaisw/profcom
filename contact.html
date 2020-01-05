@@ -6,10 +6,16 @@ location: >-
 ---
 <section class="showcase">
 	<div class="container-fluid p-0">
-
-		<div class="row no-gutters">
-			<div class="col-lg-6 order-lg-1 p-2">
-				<form>
+		<div class="row no-gutters reverse">
+			<div class="col-md-6 order-lg-1 my-auto showcase-text">
+					<h1>Kontak Kami</h1>
+					<p class="text-muted mt-0">
+						Kami terbuka untuk anda
+					</p>
+					<img class="m-4" style="max-width: 100%;" src="{{'assets/graphics-contact.png' | relative_url }}" alt="">
+				</div>
+			<div class="col-md-6 order-lg-1 p-5">
+				<form class="m-auto" style="max-width: 400px;">
 					<fieldset id="name" class="form-group">
 						<legend class="col-form-label pt-0">Name</legend>
 						<div role="group"><input placeholder="Name" class="form-control form-control-md"
@@ -36,44 +42,38 @@ location: >-
 					</fieldset>
 					<div class="d-flex align-items-center">
 						<div>
-							<div style="width: 304px; height: 78px;">
-								<div><iframe
-										src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LceOLgUAAAAAEUOCS1Y5JiilcQESn_7d6CW6Skf&amp;co=aHR0cHM6Ly9ha3NhbWVkaWEuY28uaWQ6NDQz&amp;hl=en&amp;v=mhgGrlTs_PbFQOW4ejlxlxZn&amp;size=normal&amp;cb=3ew49yfgpra5"
-										width="304" height="78" role="presentation" name="a-tibscoq2i66m"
-										frameborder="0" scrolling="no"
-										sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-								</div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
-									class="g-recaptcha-response"
-									style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-							</div>
+							<div><iframe
+									src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LceOLgUAAAAAEUOCS1Y5JiilcQESn_7d6CW6Skf&amp;co=aHR0cHM6Ly9ha3NhbWVkaWEuY28uaWQ6NDQz&amp;hl=en&amp;v=mhgGrlTs_PbFQOW4ejlxlxZn&amp;size=normal&amp;cb=3ew49yfgpra5"
+									width="304" height="78" role="presentation" name="a-tibscoq2i66m"
+									frameborder="0" scrolling="no"
+									sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+							</div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+								class="g-recaptcha-response"
+								style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
 						</div>
-						<button class="ml-auto btn btn-lg btn-primary px-5 py-2">
-							Send
-						</button>
 					</div>
+					<button class="btn btn-lg btn-primary w-100 px-5 py-2 mt-3">
+						Send
+					</button>
 				</form>
 			</div>
-
-			<div class="col-lg-6 order-lg-1 my-auto showcase-text">
-
-				<h2>Kontak Kami</h2>
-				<p class="text-muted m-0 p-0">
-					Your problem may be our next case study
-				</p>
-			</div>
-
-
 		</div>
-		<div class="row no-gutters">
+		<div class="curvy-separator" style="--up: white;transform: scale(-1, 2)">
+			{% include linear-separator.svg %}
+		</div>
+		<div class="row reverse no-gutters" style="background-color: #47f;color: white;">
 			<div class="col-lg-6 order-lg-1">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15835.591922868363!2d112.71198617282728!3d-7.137795026040198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd803dd886bbff5%3A0x9777ca139b28195d!2sUniversity%20of%20Trunojoyo%20Madura!5e0!3m2!1sen!2sid!4v1577415189071!5m2!1sen!2sid"
-					frameborder="0" style="border:0;width: 100%;height: 100%;" allowfullscreen></iframe>
+					frameborder="0" style="border:0;width: 100%;height: 400px;" allowfullscreen></iframe>
 			</div>
 			<div class="col-lg-6 order-lg-1 my-auto showcase-text">
 				<h2>Lokasi Kami</h2>
 				<p class="lead mb-0">{{ page.location }}</p>
 			</div>
+		</div>
+		<div class="curvy-separator" style="--down: white;transform: scale(1, 2)">
+			{% include linear-separator.svg %}
 		</div>
 	</div>
 </section>

@@ -16,15 +16,15 @@ summary:
 <!-- Masthead -->
 {% include header.html %}
 
-{% include imagesection.html title="minContent" data=page.summary %}
+{% include showcase-section.html title="minContent" data=page.summary %}
 
 <!-- Icons Grid -->
 <div class="bg-light">
-    {% include iconsection.html title="Services" data=site.data.minicontent link="services" %}
+    {% include features-section.html title="Services" data=site.data.minicontent link="services" %}
 </div>
 
 <!-- Image Showcases -->
-{% include imagesection.html title="minContent" data=site.data.bigcontent %}
+{% include showcase-section.html title="minContent" data=site.data.bigcontent %}
 
 <!-- Call to Action -->
 {% include signup.html %}
