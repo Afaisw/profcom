@@ -3,10 +3,10 @@
   icon: icon-screen-desktop m-auto text-primary
 - title: Custom System Development
   isi: Sistem terkustomisasi yang dibangun secara khusus dan terukur untuk menyelesaikan permasalahan tertentu.
-  icon: icon-layers m-auto text-primary
+  icon: icon-settings m-auto text-primary
 - title: Mobile App Development
   isi: Menyelesaikan kebutuhan client dengan pembangunan aplikasi berbasis android maupun iPhone.
-  icon: icon-check m-auto text-primary
+  icon: icon-screen-tablet m-auto text-primary
 - title: Digital Marketing
   isi: Melakukan aktifitas digital marketing atau pun konsultan sebagai wujud totalitas aksamedia dalam penyelesaian masalah client.
-  icon: icon-check m-auto text-primary
+  icon: icon-basket-loaded m-auto text-primary
