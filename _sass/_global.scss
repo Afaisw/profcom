@@ -13,16 +13,19 @@ h6 {
 }
 
 .navbar{
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Playfair Display', serif;
   .nav-item.active {
     font-weight: bold;
   }
+}
+.contentservices h1{
+  font-size: 43px;
 }
 .contentservices h3{
   font-size: large;
 }
 .contentservices p{
-  font-size: small;
+  font-size: 16px;
 }
 .curvy-separator {
   position: relative;
