@@ -23,4 +23,16 @@
     object-fit: contain;
     margin-bottom: 1em;
   }
+  .study {
+    color: #111;
+    text-decoration: none;
+    img {
+      transition: all 0.3s;
+    }
+    &:hover img {
+      transform: scale(1.1);
+
+    }
+  }
+
 }
