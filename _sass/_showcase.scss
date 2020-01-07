@@ -15,6 +15,7 @@
   }
   .row:not(.reverse):nth-child(odd), .row.reverse:nth-child(even) {
     flex-direction: row-reverse;
+    background-color: #e5e6eb;
   }
 }
 
